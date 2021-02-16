@@ -1,0 +1,24 @@
+{
+  "type": "mysql",
+  "host": "134.249.157.65",
+  "port": 3306,
+  "username": "admin",
+  "password": "postgres",
+  "database": "top",
+  "entities": [
+    "dist/**/*.entity{.ts,.js}"
+  ],
+  "dropSchema": false,
+  "synchronize": false,
+  "migrationsRun": false,
+  "logging": true,
+  "migrations": [
+    "dist/src/**/db/migrations/*{.ts,.js}"
+  ],
+  "migrations": [
+    "dist/modules/**/db/migrations/*{.ts,.js}"
+  ],
+  "cli": {
+    "migrationsDir": "db/migrations"
+  }
+}
